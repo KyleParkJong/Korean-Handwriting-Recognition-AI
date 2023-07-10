@@ -67,7 +67,8 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 - (Example applies 21x21 kernel)
 
 ### (6) Histogram examine & Apply 2nd threshold 
-<img src="/images/6.png" width="35%" height="35%" title="letter" alt="letter"></img>
+<img src="/images/6-1.png" width="35%" height="35%" title="letter" alt="letter"></img>
+<img src="/images/6-2.png" width="35%" height="35%" title="letter" alt="letter"></img>
 
 - Set the threshold through the histogram of the picture smoothed with LPF, then binarization is performed once again based on the threshold.
 - (Example threshold value : 230)
