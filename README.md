@@ -86,9 +86,9 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 - total : 810 one-letter data were collected, 
 
 ## 2-2. Two-letter data
-<img src="/images/bsn2_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn2_1.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn2_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/bsn2_0.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn2_1.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn2_2.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 
 - Two-letter data was made by combining one-letter data.
 - In order to reduce the loss of feature information during resizing, the img_concat(img1, img2) function was created and used to connect the images, and forming them into squares.
@@ -96,19 +96,19 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 * Acquired 6,480 two-letter data per target (81P2)
 
 ## 2-3. Three-letter data
-<img src="/images/bsn3_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn3_1.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn3_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/bsn3_0.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn3_1.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn3_2.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 
 - Three-letter data was made by combining one-letter data and two-letter data.
 
 * Acquired 7,980 three-letter data per target
 
 ## 2-4. Actual handwritten data from note-taking
-<img src="/images/bsn4_1.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn4_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn4_3.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/bsn4_4.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/bsn4_1.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn4_2.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn4_3.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
+<img src="/images/bsn4_4.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 
 - Data was acquired from the target's actual note taking.
 
@@ -120,12 +120,14 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 - n.Epoch = 20, Batch size = 50, Learning rate = 0.01
 
 - Layer configure
-<img src="/images/result1.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+<img src="/images/result1.png" width="60%" height="60%" title="letter" alt="letter"></img>
 
 - Result
   + Loss=0.7819, Accuracy=0.72
   + Result for test data=0.6503
-<img src="/images/result2.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+<img src="/images/result2.png" width="60%" height="60%" title="letter" alt="letter"></img>
 
 # 4. 2nd Result
 - Train data : Test data = 9 : 1
@@ -133,12 +135,14 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 - n.Epoch = 20, Batch size = 150, Learning rate = 0.04
 
 - Layer configure
-<img src="/images/result3.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+<img src="/images/result3.png" width="60%" height="60%" title="letter" alt="letter"></img>
 
 - Result
   + Loss=0.0397, Accuracy=0.9908
   + Result for test data=0.9360
-<img src="/images/result4.png" width="50%" height="50%" title="letter" alt="letter"></img>
+  
+<img src="/images/result4.png" width="60%" height="60%" title="letter" alt="letter"></img>
 
 # 5. Result analysis
 Compared to the first result the second result were all significantly improved. I think the reason why the results have improved is as follows.
