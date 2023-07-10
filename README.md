@@ -9,16 +9,16 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 
 ## (1-1) Input data
 - Korean Handwriting from 10 people 
-<img src="/images/bsn_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/chw_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/kbj_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/kjh_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/ljh_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/lse_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/pjh_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/psm_1.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/shb_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
-<img src="/images/sws_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/bsn_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/chw_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/kbj_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/kjh_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/ljh_2.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/lse_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/pjh_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/psm_1.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/shb_2.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
+<img src="/images/sws_2.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
 
 ## (1-2) Target
 - 10 people (3 family members, 7 close friends)
