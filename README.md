@@ -9,6 +9,7 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 
 ## (1-1) Input data
 - Korean Handwriting from 10 people 
+
 <img src="/images/bsn_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
 <img src="/images/chw_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
 <img src="/images/kbj_0.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
