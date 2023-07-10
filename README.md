@@ -1,2 +1,90 @@
-# Korean-handwriting-recognition-AI
-Multi-media programming final project
+# Korean Handwriting Recognition AI
+> Konkuk Univ. Senior, Multimedia Programming - Term project (Individual project)
+
+# 1. Introduction
+> "Can an individual's Korean handwriting be learned through an artificial neural network?"
+Even when writing the same letters, each person's handwriting looks subtly different. The handwriting of people who are forced to write or who write while belching will leave different traces than usual, making it highly reliable as evidence. This uniqueness is what makes a signature unique. In important documents and exams, it is very important to check the handwriting for authenticity.
+
+As it is used to prove identity, handwriting is unique, but if there are two different handwritings with only subtle differences, it is difficult for humans to distinguish the difference with the naked eye. Therefore, I wanted to implement an artificial intelligence model for Korean handwriting recognition.
+
+## (1-1) Input data
+- Korean Handwriting from 10 people 
+<img src="/images/bsn_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/chw_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/kbj_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/kjh_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/ljh_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/lse_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/pjh_0.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/psm_1.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/shb_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+<img src="/images/sws_2.jpg" width="30%" height="30%" title="letter" alt="letter"></img>
+
+## (1-2) Target
+- 10 people (3 family members, 7 close friends)
+    + BSN(Sona Bang), CHW(Howon Choi), KBJ(Beomjun Kim), KJH(Joonhyung Kwon), LJH(Jongho Lee), LSE(Seungeon Lee), PJH(Jonghyuk Park), PSM(Sangmoon Park), SHB(Suk Hyunbin), SWS(Woosub Shin)
+
+## (1-3) Application field
+- Handwriting verification of national examination and important documents.
+- OCR (Optical Character Recognition)
+
+# 2. Creating database
+## 2-1. One-letter data
+<p align="center">
+  <img src="/images/img1.png" width="60%" height="60%" title="total loss" alt="total loss"></img>
+</p>
+
+### (1) imread
+<img src="/images/1.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- Used template provided from "Ongle-leap", a font design company
+- Included every combination of Korean letter
+
+### (2) Unsharped mask
+<img src="/images/2.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- Used unsharped mask to sharpen one's handwriting 
+
+### (3) Grayscale transform
+<img src="/images/3.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+### (4) Histogram examine & Apply 1st threshold 
+<img src="/images/4-2.png" width="50%" height="50%" title="letter" alt="letter"></img>
+<img src="/images/4-1.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- The threshold is set through the Histogram, and the image is binarized based on the threshold. 
+- (In this example, the threshold is set to 150 of 0 to 255)
+
+### (5) Apply LPF
+<img src="/images/5.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- In order to extract the position of the handwriting, it is necessary to smooth the handwriting through LPF so that the contour is exposed.
+- Set the kernel size appropriately and apply LPF to binarized images through cv2.filter2D. 
+- The smaller the Kernel size, the easier it is to detect smaller units such as vowels and consonants, and the larger the Kernel size, the easier it is to detect the contour of the letter itself.
+- (Example applies 21x21 kernel)
+
+### (6) Histogram examine & Apply 2nd threshold 
+<img src="/images/6.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- Set the threshold through the histogram of the picture smoothed with LPF, then binarization is performed once again based on the threshold.
+- (Example threshold value : 230)
+
+### (7) Extract contour & coordinates, image crop
+<img src="/images/7.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- A small outline that is not a letter, was not extracted.
+- The x,y coordinates and w,h values were extracted from the extracted contour, and the coordinates were calculated again with a square so that the handwriting characteristics were not lost as much as possible because they had to be resized to 64x64 sizes later.
+- Through the calculated coordinates, the image was cropped into a square shape.
+
+### (8) Imwrite 
+<img src="/images/8.png" width="50%" height="50%" title="letter" alt="letter"></img>
+
+- 81 one-letter data per person
+- total : 810 one-letter data were collected, 
+
+# 3. 1st Result
+
+# 4. 2nd Result
+
+# 5. Result analysis
+
