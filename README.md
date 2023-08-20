@@ -3,6 +3,7 @@
 
 # 1. Introduction
 > "Can an individual's Korean handwriting be learned through an artificial neural network?"
+
 Even when writing the same letters, each person's handwriting looks subtly different. The handwriting of people who are forced to write or who write while belching will leave different traces than usual, making it highly reliable as evidence. This uniqueness is what makes a signature unique. In important documents and exams, it is very important to check the handwriting for authenticity.
 
 As it is used to prove identity, handwriting is unique, but if there are two different handwritings with only subtle differences, it is difficult for humans to distinguish the difference with the naked eye. Therefore, I wanted to implement an artificial intelligence model for Korean handwriting recognition.
