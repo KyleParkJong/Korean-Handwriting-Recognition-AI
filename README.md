@@ -28,7 +28,7 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 - 10 people (3 family members, 7 close friends)
     + BSN(Sona Bang), CHW(Howon Choi), KBJ(Beomjun Kim), KJH(Joonhyung Kwon), LJH(Jongho Lee), LSE(Seungeon Lee), PJH(Jonghyuk Park), PSM(Sangmoon Park), SHB(Suk Hyunbin), SWS(Woosub Shin)
 
-## (1-3) Application field
+## (1-3) Expected application field
 - Handwriting verification of national examination and important documents.
 - OCR (Optical Character Recognition)
 
