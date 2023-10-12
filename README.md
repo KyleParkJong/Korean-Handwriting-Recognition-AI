@@ -4,7 +4,7 @@
 # 1. Introduction
 > "Can an individual's Korean handwriting be learned through an artificial neural network?"
 
-Even when writing the same letters, each person's handwriting looks subtly different. The handwriting of people who are forced to write or who write while belching will leave different traces than usual, making it highly reliable as evidence. This uniqueness is what makes a signature unique. In important documents and exams, it is very important to check the handwriting for authenticity.
+Even when writing the same letters, each person's handwriting style looks subtly different. The handwriting style of people who are forced to write or who write while belching will leave different traces than usual, making it highly reliable as evidence. This uniqueness is what makes a signature unique. In important documents and exams, it is very important to check the handwriting for authenticity.
 
 As it is used to prove identity, handwriting is unique, but if there are two different handwritings with only subtle differences, it is difficult for humans to distinguish the difference with the naked eye. Therefore, I wanted to implement an artificial intelligence model for Korean handwriting recognition.
 
@@ -22,7 +22,7 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 <img src="/images/shb_2.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
 <img src="/images/sws_2.jpg" width="15%" height="15%" title="letter" alt="letter"></img>
 
-* The picture above is all written by different person.
+* The picture above is all written by different person. (You can see that they are the same letters, but subtly different.)
 
 ## (1-2) Target
 - 10 people (3 family members, 7 close friends)
@@ -92,7 +92,7 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 <img src="/images/bsn2_1.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 <img src="/images/bsn2_2.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 
-- Two-letter data was made by combining one-letter data.
+- The two-letter data was created by combining different single-letter data, each scaled appropriately.
 - In order to reduce the loss of feature information during resizing, the img_concat(img1, img2) function was created and used to connect the images, and forming them into squares.
 
 * Acquired 6,480 two-letter data per target (81P2)
@@ -102,7 +102,7 @@ As it is used to prove identity, handwriting is unique, but if there are two dif
 <img src="/images/bsn3_1.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 <img src="/images/bsn3_2.jpg" width="20%" height="20%" title="letter" alt="letter"></img>
 
-- Three-letter data was made by combining one-letter data and two-letter data.
+- Three-letter data was made by combining one-letter data and two-letter data, each scaled appropriately.
 
 * Acquired 7,980 three-letter data per target
 
